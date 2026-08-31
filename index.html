@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linkframe — QR codes that look like your brand</title>
+  <meta name="description" content="Design branded QR codes with your logo and a call-to-action frame. Smart app links, dynamic destinations and scan analytics.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fuavspavvhnkcdmczgfa.supabase.co" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/styles.css">
+  <script>
+    window.__ENV__ = {
+      SUPABASE_URL: "https://fuavspavvhnkcdmczgfa.supabase.co",
+      SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1YXZzcGF2dmhua2NkbWN6Z2ZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgxODIxMDcsImV4cCI6MjEwMzc1ODEwN30.YK3LAR0NhLBT64tlE3CeURU7gqdIOoqLO9Seq9Kf49Y",
+      FUNCTIONS_URL: "https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1",
+      SITE_URL: ""
+    };
+    // When served by a Supabase gateway (path /functions/v1/site/), the page's own origin
+    // is the API base. When hosted externally (e.g. GitHub Pages), the baked-in values are used.
+    (function (env) {
+      var servedByFunctions = /\/functions\/v1\/site\//.test(location.pathname);
+      var baked = env.SUPABASE_URL && env.SUPABASE_URL.indexOf("__") !== 0;
+      if (servedByFunctions || !baked) {
+        env.SUPABASE_URL = location.origin;
+        env.FUNCTIONS_URL = location.origin + "/functions/v1";
+        env.SITE_URL = location.origin + "/functions/v1/site/";
+      } else {
+        env.FUNCTIONS_URL = env.SUPABASE_URL + "/functions/v1";
+        env.SITE_URL = location.origin + location.pathname.replace(/[^/]*$/, "");
+      }
+    })(window.__ENV__);
+  </script>
+  <script src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/vendor/supabase.js"></script>
+  <script src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/vendor/qrcode.js"></script>
+</head>
+<body>
+  <div id="app" class="app-root"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <script type="module" src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/app.js"></script>
+</body>
+</html>
