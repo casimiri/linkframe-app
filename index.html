@@ -1,44 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QR TekLid — QR codes that look like your brand</title>
-  <meta name="description" content="Design branded QR codes with your logo and a call-to-action frame. Dynamic links you can edit any time, with scan analytics.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fuavspavvhnkcdmczgfa.supabase.co" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/styles.css">
-  <script>
-    window.__ENV__ = {
-      SUPABASE_URL: "https://fuavspavvhnkcdmczgfa.supabase.co",
-      SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1YXZzcGF2dmhua2NkbWN6Z2ZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgxODIxMDcsImV4cCI6MjEwMzc1ODEwN30.YK3LAR0NhLBT64tlE3CeURU7gqdIOoqLO9Seq9Kf49Y",
-      FUNCTIONS_URL: "https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1",
-      SITE_URL: ""
-    };
-    // When served by a Supabase gateway (path /functions/v1/site/), the page's own origin
-    // is the API base. When hosted externally (e.g. GitHub Pages), the baked-in values are used.
-    (function (env) {
-      var servedByFunctions = /\/functions\/v1\/site\//.test(location.pathname);
-      var baked = env.SUPABASE_URL && env.SUPABASE_URL.indexOf("__") !== 0;
-      if (servedByFunctions || !baked) {
-        env.SUPABASE_URL = location.origin;
-        env.FUNCTIONS_URL = location.origin + "/functions/v1";
-        env.SITE_URL = location.origin + "/functions/v1/site/";
-      } else {
-        env.FUNCTIONS_URL = env.SUPABASE_URL + "/functions/v1";
-        env.SITE_URL = location.origin + location.pathname.replace(/[^/]*$/, "");
-      }
-    })(window.__ENV__);
-  </script>
-  <script src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/vendor/supabase.js"></script>
-  <script src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/vendor/qrcode.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free QR Code Generator — With Logo, No Sign-up | QR TekLid</title>
+<meta name="description" content="Create free QR codes for links, Wi-Fi, contacts, email, SMS and more. Add a logo and colours, then download PNG or SVG. No account needed.">
+<link rel="canonical" href="https://qr.teklid.net/">
+<link rel="alternate" hreflang="en" href="https://qr.teklid.net/">
+<link rel="alternate" hreflang="fr" href="https://qr.teklid.net/fr/">
+<link rel="alternate" hreflang="es" href="https://qr.teklid.net/es/">
+<link rel="alternate" hreflang="de" href="https://qr.teklid.net/de/">
+<link rel="alternate" hreflang="x-default" href="https://qr.teklid.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QR TekLid">
+<meta property="og:title" content="Free QR Code Generator — With Logo, No Sign-up | QR TekLid">
+<meta property="og:description" content="Create free QR codes for links, Wi-Fi, contacts, email, SMS and more. Add a logo and colours, then download PNG or SVG. No account needed.">
+<meta property="og:url" content="https://qr.teklid.net/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>if (location.hash.indexOf('#/') === 0) location.replace('/app/' + location.hash);</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/styles.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"QR TekLid","url":"https://qr.teklid.net/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","inLanguage":"en","description":"Create free QR codes for links, Wi-Fi, contacts, email, SMS and more. Add a logo and colours, then download PNG or SVG. No account needed.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it free, and do the codes expire?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is free and there is nothing to sign up for. The codes made here are static: the content is stored inside the pattern itself, so they keep working forever and never depend on our servers."}},{"@type":"Question","name":"Can I add a logo and my own colours?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upload a PNG, JPG, WebP or SVG logo, pick colours or a gradient, and choose dot, corner and frame styles. The logo is embedded in your browser and never leaves your device."}},{"@type":"Question","name":"Should I download PNG or SVG for print?","acceptedAnswer":{"@type":"Answer","text":"Use SVG for print: it is a vector file that stays sharp at any size, from business cards to posters. PNG (1024 px) is best for websites, documents and social media."}},{"@type":"Question","name":"Can I change where a code points after printing it?","acceptedAnswer":{"@type":"Answer","text":"Not with a static code. For that you need a dynamic code, which you can create with a free account (up to 2 saved codes) and edit at any time, with scan statistics included."}}]}</script>
 </head>
-<body>
-  <div id="app" class="app-root"></div>
-  <div id="toasts" class="toasts" aria-live="polite"></div>
-  <script type="module" src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/app.js"></script>
+<body class="seo">
+<div class="container">
+<nav class="topnav">
+  <a class="brand" href="/"><span class="brand-mark" style="width:28px;height:28px;border-radius:8px;font-size:14px">Q</span><span class="brand-name">QR TekLid</span></a>
+  <div class="links">
+    <div class="lang-seg"><a class="on" href="/" hreflang="en">EN</a><a class="" href="/fr/" hreflang="fr">FR</a><a class="" href="/es/" hreflang="es">ES</a><a class="" href="/de/" hreflang="de">DE</a></div>
+    <a class="btn" href="/app/#/login">Sign in</a>
+  </div>
+</nav>
+<main>
+
+<h1 class="seo-h1">Free QR code generator</h1>
+<p class="seo-p">QR TekLid turns a link, a Wi-Fi network, a contact card, an email, a phone number or a text message into a QR code in seconds. Anyone who scans it with a phone camera is taken straight to the content, with no app to install.</p>
+<p class="seo-p">Everything happens in your browser: type your content, style the code with your colours, a frame and your logo, and download it as PNG or SVG. There is no sign-up, no watermark and no expiry date on the codes you make here.</p>
+<div id="generator" data-type="url" data-lang="en"><noscript><p class="alert info">Enable JavaScript to use the QR code generator.</p></noscript></div>
+<section class="seo-section"><h2>How to create it</h2><ol class="seo-steps"><li>Choose what the code should contain: a link, text, Wi-Fi, a contact and more.</li><li>Enter the details. The preview updates as you type.</li><li>Optionally pick colours, a frame, dot styles and upload your logo.</li><li>Download the code as PNG for screens or SVG for print.</li></ol></section>
+
+<section class="seo-section"><h2>Frequently asked questions</h2><details class="faq-item"><summary>Is it free, and do the codes expire?</summary><p>Yes, it is free and there is nothing to sign up for. The codes made here are static: the content is stored inside the pattern itself, so they keep working forever and never depend on our servers.</p></details><details class="faq-item"><summary>Can I add a logo and my own colours?</summary><p>Yes. Upload a PNG, JPG, WebP or SVG logo, pick colours or a gradient, and choose dot, corner and frame styles. The logo is embedded in your browser and never leaves your device.</p></details><details class="faq-item"><summary>Should I download PNG or SVG for print?</summary><p>Use SVG for print: it is a vector file that stays sharp at any size, from business cards to posters. PNG (1024 px) is best for websites, documents and social media.</p></details><details class="faq-item"><summary>Can I change where a code points after printing it?</summary><p>Not with a static code. For that you need a dynamic code, which you can create with a free account (up to 2 saved codes) and edit at any time, with scan statistics included.</p></details></section>
+
+<section class="seo-section"><h2>More free QR code generators</h2><ul class="seo-links"><li><a href="/url-qr-code-generator/">URL QR code generator</a></li><li><a href="/text-qr-code-generator/">Text QR code generator</a></li><li><a href="/email-qr-code-generator/">Email QR code generator</a></li><li><a href="/phone-qr-code-generator/">Phone number QR code generator</a></li><li><a href="/sms-qr-code-generator/">SMS QR code generator</a></li><li><a href="/wifi-qr-code-generator/">Wi-Fi QR code generator</a></li><li><a href="/vcard-qr-code-generator/">vCard QR code generator</a></li><li><a href="/app-store-qr-code-generator/">App download QR code generator</a></li></ul></section>
+
+</main>
+<footer class="foot">
+  <span>© 2026 QR TekLid · Free QR code generator</span>
+  <span><a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of use</a> · <a href="/about/">About QR TekLid</a> · <a href="/contact/">Contact</a></span>
+</footer>
+</div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<script>window.__ENV__={SUPABASE_URL:"https://fuavspavvhnkcdmczgfa.supabase.co",SUPABASE_ANON_KEY:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1YXZzcGF2dmhua2NkbWN6Z2ZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgxODIxMDcsImV4cCI6MjEwMzc1ODEwN30.YK3LAR0NhLBT64tlE3CeURU7gqdIOoqLO9Seq9Kf49Y",FUNCTIONS_URL:"https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1",SITE_URL:location.origin+'/app/'};</script>
+<script src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/vendor/qrcode.js"></script>
+<script type="module" src="https://fuavspavvhnkcdmczgfa.supabase.co/functions/v1/site/embed.js"></script>
 </body>
 </html>
